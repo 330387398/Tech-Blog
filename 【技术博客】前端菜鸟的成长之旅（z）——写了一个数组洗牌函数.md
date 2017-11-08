@@ -16,8 +16,7 @@ var len = arr.length
 !function () {
 	var array = []
 	for (var i=0; i<len; i++) {
-		var length = arr.length
-		var a = Math.floor(Math.random()*length)
+		var a = Math.floor(Math.random()*arr.length)
 		array.push(arr[a])
 		arr.splice(a, 1)
 	}
